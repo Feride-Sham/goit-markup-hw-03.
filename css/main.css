@@ -104,6 +104,7 @@ h3 {
 
 /* ------------стилизация Героя------------ */
 .hero {
+  margin-bottom: 92.5px;
   background-color: #757575;
   text-align: center;
   letter-spacing: 0.06em;
@@ -140,15 +141,22 @@ h3 {
 }
 
 /* -------стилизация блока Преимущества Студии--------*/
+.advantages {
+  margin-bottom: 94px
 
+}
 .advantages h2{
   margin-top: 0px;
   margin-bottom: 0px;
-
 }
+
+.advantages-img {
+  margin-bottom: 30px;
+}
+
 .advantages h3 {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -167,9 +175,14 @@ margin-top: 0px;
 }
 
 /* -------стилизация блока Чем мы занимаемся--------*/
+.examples {
+  margin-bottom: 94px
+}
+
+
 .examples h2 {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -194,12 +207,13 @@ margin-top: 0px;
 /* ---------стилизацтя блока Сотрудники------------ */
 .staff {
   background-color: #f5f4fa;
+  margin-bottom: 94px
 }
 
 .staff h2 {
   margin-top: 0px;
-  margin-bottom: 0px;
-
+  margin-bottom: 50px;
+  padding-top: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -207,9 +221,13 @@ margin-top: 0px;
   text-align: center;
 }
 
+.staff-img {
+margin-bottom: 30px;
+}
+
 .staff h3 {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -218,6 +236,8 @@ margin-top: 0px;
 }
 
 .staff p {
+margin-bottom: 15px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -237,13 +257,18 @@ margin-top: 0px;
 /* ----------стилизация блока Постоянные клиенты---------- */
 .customer-title {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
+.customer {
+  margin-bottom: 94px;
+}
+
 
 .customer a:hover,
 .customer a:focus {
@@ -295,6 +320,15 @@ margin-top: 0px;
 }
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
+.portfolio {
+  margin-top: 93px;
+  margin-bottom: 94px;
+}
+
+.filters {
+  margin-bottom: 34px;  
+ }
+
 .portfolio a {
   text-decoration: none;
 }
@@ -306,7 +340,6 @@ margin-top: 0px;
   padding: 6px 22px;
   min-width: 73px;
  
-
   color: var(--secondary-text-color);
   background-color: v#F5F4FA;
   text-decoration: none;
@@ -325,8 +358,8 @@ margin-top: 0px;
 }
 
 .gallery h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 
 
   font-weight: 700;
@@ -338,7 +371,7 @@ margin-top: 0px;
 .gallery p {
    margin-top: 0px;
   margin-bottom: 0px;
-  
+
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
