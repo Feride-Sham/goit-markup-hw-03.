@@ -19,262 +19,277 @@
     <!-- Шапка с навигацией-->
     <header>
       <!--навигация по сайту-->
-      <nav class="navigation">
-        <div class="logo">
-          <a href="./"> <span class="logo-web">Web</span> Studio </a>
-        </div>
-        <ul>
-          <li><a href="./index.html" class="nav-link">Студия</a></li>
-          <li>
-            <a href="./portfolio.html" class="nav-link current">Портфолио</a>
-          </li>
-          <li><a href="" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="./"> <span class="logo-web">Web</span> Studio </a>
+          </div>
 
-      <!--контакты для связи-->
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com " class="contacts">
-            <img src="./image/mail.svg" alt="Конверт" />
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111 " class="contacts">
-            <img src="./image/smartphone.svg" alt="Телефон" />
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+          <ul class="list">
+            <li><a href="" class="nav-link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+            <li><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!--контакты для связи-->
+
+        <ul class="list">
+          <li>
+            <a href="mailto:info@devstudio.com " class="contacts">
+              <img src="./image/mail.svg" alt="Конверт" />
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111 " class="contacts">
+              <img src="./image/smartphone.svg" alt="Телефон" />
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="portfolio">
       <section>
-        <h1>Портфолио</h1>
+        <div class="container">
+          <h1>Портфолио</h1>
 
-        <!--Фильтры-->
-        <ul>
-          <li><button type="button" class="portfolio-button">Все</button></li>
-          <li>
-            <button type="button" class="portfolio-button">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="portfolio-button">Маркетинг</button>
-          </li>
-        </ul>
+          <!--Фильтры-->
+
+          <ul class="list">
+            <li><button type="button" class="portfolio-button">Все</button></li>
+            <li>
+              <button type="button" class="portfolio-button">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-button">Приложения</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
 
         <!--Галерея-->
-        <ul class="gallery">
-          <li>
-            <a href="#"
-              ><img
-                src="./image/portfolio/tehno.jpg"
-                alt="Платформа для цифрового шпионажа"
-                width="370"
-              />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
-              <p class="text">
-                Технокряк это современная площадка распространения коронавируса.
-                Компании используют эту платформу для цифрового шпионажа и атак
-                на защищённые сервера конкурентов.
-              </p>
-            </a>
-          </li>
+        <div class="container">
+          <ul class="list gallery">
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/tehno.jpg"
+                  alt="Платформа для цифрового шпионажа"
+                  width="370"
+                />
+                <h2>Технокряк</h2>
+                <p>Веб-сайт</p>
+                <p class="text">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#"
-              ><img
-                src="./image/portfolio/busket.jpg"
-                alt="Баскетбол"
-                width="370"
-              />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempore, hic possimus. Veritatis tempora illum necessitatibus
-                quod velit repellendus inventore in reiciendis, dolorum
-                voluptatum neque atque ullam nemo dolores magnam eius.
-              </p>
-            </a>
-          </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/busket.jpg"
+                  alt="Баскетбол"
+                  width="370"
+                />
+                <h2>Постер New Orlean vs Golden Star</h2>
+                <p>Дизайн</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore, hic possimus. Veritatis tempora illum necessitatibus
+                  quod velit repellendus inventore in reiciendis, dolorum
+                  voluptatum neque atque ullam nemo dolores magnam eius.
+                </p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#"
-              ><img
-                src="./image/portfolio/seafood.jpg"
-                alt="Ресторан морской кухни"
-                width="370"
-              />
-              <h2>Ресторан Seafood</h2>
-              <p>Приложение</p>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempore, hic possimus. Veritatis tempora illum necessitatibus
-                quod velit repellendus inventore in reiciendis, dolorum
-                voluptatum neque atque ullam nemo dolores magnam eius.
-              </p>
-            </a>
-          </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/seafood.jpg"
+                  alt="Ресторан морской кухни"
+                  width="370"
+                />
+                <h2>Ресторан Seafood</h2>
+                <p>Приложение</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Tempore, hic possimus. Veritatis tempora illum necessitatibus
+                  quod velit repellendus inventore in reiciendis, dolorum
+                  voluptatum neque atque ullam nemo dolores magnam eius.
+                </p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#"
-              ><img
-                src="./image/portfolio/headphones.jpg"
-                alt="Наушники"
-                width="370"
-              />
-              <h2>Проект Prime</h2>
-              <p>Маркетинг</p>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur quisquam praesentium officiis id rerum rem error
-                facilis voluptate, nisi ab in minima, at, itaque repellendus
-                nulla illum accusantium odit. Fugiat.
-              </p></a
-            >
-          </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/headphones.jpg"
+                  alt="Наушники"
+                  width="370"
+                />
+                <h2>Проект Prime</h2>
+                <p>Маркетинг</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur quisquam praesentium officiis id rerum rem error
+                  facilis voluptate, nisi ab in minima, at, itaque repellendus
+                  nulla illum accusantium odit. Fugiat.
+                </p></a
+              >
+            </li>
 
-          <li>
-            <a href="#"
-              ><img src="./image/portfolio/boxes.jpg" alt="Коробочки" />
-              <h2>Проект Boxes</h2>
-              <p>Приложение</p>
-              <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                nulla ad veritatis adipisci, rem architecto ipsam placeat
-                dolore. Fugiat libero vero possimus voluptate perferendis hic
-                nesciunt modi ea a laudantium!
-              </p></a
-            >
-          </li>
+            <li>
+              <a href="#"
+                ><img src="./image/portfolio/boxes.jpg" alt="Коробочки" />
+                <h2>Проект Boxes</h2>
+                <p>Приложение</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+                  nulla ad veritatis adipisci, rem architecto ipsam placeat
+                  dolore. Fugiat libero vero possimus voluptate perferendis hic
+                  nesciunt modi ea a laudantium!
+                </p></a
+              >
+            </li>
 
-          <li>
-            <a href="#"
-              ><img
-                src="./image/portfolio/monitor.jpg"
-                alt="Монитор"
-                width="370"
-              />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque accusamus voluptatum cumque ipsa magni. Sit unde
-                temporibus, a dolore maxime asperiores voluptatum hic ad
-                architecto molestias aspernatur repudiandae saepe enim?
-              </p>
-            </a>
-          </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/monitor.jpg"
+                  alt="Монитор"
+                  width="370"
+                />
+                <h2>Inspiration has no Borders</h2>
+                <p>Веб-сайт</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque accusamus voluptatum cumque ipsa magni. Sit unde
+                  temporibus, a dolore maxime asperiores voluptatum hic ad
+                  architecto molestias aspernatur repudiandae saepe enim?
+                </p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#"
-              ><img src="./image/portfolio/book.jpg" alt="Книга" width="370" />
-              <h2>Издание Limited Edition</h2>
-              <p>Дизайн</p>
-              <p class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Praesentium minima a natus non in ullam possimus nobis mollitia,
-                voluptate quasi beatae quod tenetur, officia, et cumque
-                provident accusantium inventore corporis.
-              </p>
-            </a>
-          </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/book.jpg"
+                  alt="Книга"
+                  width="370"
+                />
+                <h2>Издание Limited Edition</h2>
+                <p>Дизайн</p>
+                <p class="text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Praesentium minima a natus non in ullam possimus nobis
+                  mollitia, voluptate quasi beatae quod tenetur, officia, et
+                  cumque provident accusantium inventore corporis.
+                </p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#"
-              ><img src="./image/portfolio/lab.jpg" alt="Лейбл" width="370" />
-              <h2>Проект LAB</h2>
-              <p>Маркетинг</p>
-              <p class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Praesentium minima a natus non in ullam possimus nobis mollitia,
-                voluptate quasi beatae quod tenetur, officia, et cumque
-                provident accusantium inventore corporis.
-              </p>
-            </a>
-          </li>
+            <li>
+              <a href="#"
+                ><img src="./image/portfolio/lab.jpg" alt="Лейбл" width="370" />
+                <h2>Проект LAB</h2>
+                <p>Маркетинг</p>
+                <p class="text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Praesentium minima a natus non in ullam possimus nobis
+                  mollitia, voluptate quasi beatae quod tenetur, officia, et
+                  cumque provident accusantium inventore corporis.
+                </p>
+              </a>
+            </li>
 
-          <li>
-            <a href="#"
-              ><img
-                src="./image/portfolio/business.jpg"
-                alt="Бизнес"
-                width="370"
-              />
-              <h2>Growing Business</h2>
-              <p>Приложение</p>
-              <p class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Praesentium minima a natus non in ullam possimus nobis mollitia,
-                voluptate quasi beatae quod tenetur, officia, et cumque
-                provident accusantium inventore corporis.
-              </p>
-            </a>
-          </li>
-        </ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="./image/portfolio/business.jpg"
+                  alt="Бизнес"
+                  width="370"
+                />
+                <h2>Growing Business</h2>
+                <p>Приложение</p>
+                <p class="text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Praesentium minima a natus non in ullam possimus nobis
+                  mollitia, voluptate quasi beatae quod tenetur, officia, et
+                  cumque provident accusantium inventore corporis.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="navigation">
-        <a href="./" class="logo"> <span class="logo-web">Web</span> Studio </a>
-        <address>
-          <p>г. Киев, пр-т Леси Украинки, 26</p>
+      <div class="container">
+        <div class="navigation">
+          <a href="./" class="logo">
+            <span class="logo-web">Web</span> Studio
+          </a>
+          <address>
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
 
-          <ul>
+            <ul class="list">
+              <li>
+                <a href="mailto:info@devstudio.com " class="footer-contacts"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111 " class="footer-contacts"
+                  >+38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div>
+          <b>Присоединяйтесь</b>
+          <ul class="list">
             <li>
-              <a href="mailto:info@devstudio.com " class="footer-contacts"
-                >info@devstudio.com</a
+              <a href="" aria-label="Ссылка на Инстаграмм" class="networks"
+                >Инстаграмм</a
               >
             </li>
             <li>
-              <a href="tel:+380961111111 " class="footer-contacts"
-                >+38 096 111 11 11
-              </a>
+              <a href="" aria-label="Ссылка на Твиттер" class="networks"
+                >Твиттер</a
+              >
+            </li>
+            <li>
+              <a href="" aria-label="Ссылка на Фейсбук" class="networks"
+                >Фейсбук</a
+              >
+            </li>
+            <li>
+              <a href="" aria-label="Ссылка на Линкедин" class="networks"
+                >Линкедин</a
+              >
             </li>
           </ul>
-        </address>
-      </div>
+        </div>
 
-      <div>
-        <b>Присоединяйтесь</b>
-        <ul>
-          <li>
-            <a href="" aria-label="Ссылка на Инстаграмм" class="networks"
-              >Инстаграмм</a
-            >
-          </li>
-          <li>
-            <a href="" aria-label="Ссылка на Твиттер" class="networks"
-              >Твиттер</a
-            >
-          </li>
-          <li>
-            <a href="" aria-label="Ссылка на Фейсбук" class="networks"
-              >Фейсбук</a
-            >
-          </li>
-          <li>
-            <a href="" aria-label="Ссылка на Линкедин" class="networks"
-              >Линкедин</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <b>Подпишитесь на рассылку</b>
-        <a href="#" class="button">Подписаться</a>
+        <div>
+          <b>Подпишитесь на рассылку</b>
+          <a href="#" class="button">Подписаться</a>
+        </div>
       </div>
     </footer>
   </body>

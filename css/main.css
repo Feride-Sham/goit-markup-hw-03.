@@ -20,7 +20,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-ul {
+/* ul { */
   list-style: none;
 }
 
@@ -28,6 +28,26 @@ h2,
 h3 {
   color: var(--secondary-text-color);
 }
+
+
+/* ---общий стиль для контейнера */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+
+  outline: 2px solid red;
+}
+
+
+/* ---общий стиль для списков */
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
 /* ----------стилизация шапки сайта----------- */
 .navigation a {
   color: var(--secondary-text-color);
@@ -63,6 +83,11 @@ h3 {
   color: var(--accent-color);
 }
 
+.list {
+  margin: 0px;
+  padding-left: 0px;
+}
+
 .contacts {
   color: var(--main-text-color);
   text-decoration: none;
@@ -79,19 +104,21 @@ h3 {
 
 /* ------------стилизация Героя------------ */
 .hero {
+  background-color: #757575;
   text-align: center;
   letter-spacing: 0.06em;
 }
 
 .main-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
   color: var(--title-text-color);
-  background: #757575;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-
-  outline: 2px solid red;
+ 
 }
 
 .button {
@@ -99,6 +126,7 @@ h3 {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+ 
 
   color: var(--title-text-color);
   background-color: var(--accent-color);
@@ -113,7 +141,15 @@ h3 {
 
 /* -------стилизация блока Преимущества Студии--------*/
 
+.advantages h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
 .advantages h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -121,6 +157,10 @@ h3 {
 }
 
 .advantages p {
+margin-top: 0px;
+  margin-bottom: 0px;
+
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -128,6 +168,9 @@ h3 {
 
 /* -------стилизация блока Чем мы занимаемся--------*/
 .examples h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -135,6 +178,10 @@ h3 {
 }
 
 .examples h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+
   color: var(--title-text-color);
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
@@ -150,6 +197,10 @@ h3 {
 }
 
 .staff h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -157,6 +208,9 @@ h3 {
 }
 
 .staff h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -182,6 +236,9 @@ h3 {
 
 /* ----------стилизация блока Постоянные клиенты---------- */
 .customer-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -243,6 +300,13 @@ h3 {
 }
 
 .portfolio-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+ 
+
   color: var(--secondary-text-color);
   background-color: v#F5F4FA;
   text-decoration: none;
@@ -261,6 +325,10 @@ h3 {
 }
 
 .gallery h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -268,6 +336,9 @@ h3 {
 }
 
 .gallery p {
+   margin-top: 0px;
+  margin-bottom: 0px;
+  
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -275,6 +346,9 @@ h3 {
 }
 
 .gallery .text {
+   margin-top: 0px;
+  margin-bottom: 0px;
+
   color: var(--title-text-color);
   background: rgba(33, 150, 243, 0.9);
   font-weight: 400;
