@@ -41,6 +41,13 @@ h3 {
 }
 
 
+/* --общий стиль для секций */
+.sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
 /* ---общий стиль для списков */
 .list {
   margin: 0px;
@@ -104,7 +111,6 @@ h3 {
 
 /* ------------стилизация Героя------------ */
 .hero {
-  margin-bottom: 92.5px;
   background-color: #757575;
   text-align: center;
   letter-spacing: 0.06em;
@@ -142,7 +148,7 @@ h3 {
 
 /* -------стилизация блока Преимущества Студии--------*/
 .advantages {
-  margin-bottom: 94px
+  padding-top: 92.5px;
 
 }
 .advantages h2{
@@ -175,11 +181,6 @@ margin-top: 0px;
 }
 
 /* -------стилизация блока Чем мы занимаемся--------*/
-.examples {
-  margin-bottom: 94px
-}
-
-
 .examples h2 {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -207,13 +208,11 @@ margin-top: 0px;
 /* ---------стилизацтя блока Сотрудники------------ */
 .staff {
   background-color: #f5f4fa;
-  margin-bottom: 94px
-}
+  }
 
 .staff h2 {
   margin-top: 0px;
   margin-bottom: 50px;
-  padding-top: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -265,11 +264,6 @@ margin-bottom: 15px;
   text-align: center;
 }
 
-.customer {
-  margin-bottom: 94px;
-}
-
-
 .customer a:hover,
 .customer a:focus {
   color: var(--accent-color);
@@ -320,11 +314,6 @@ margin-bottom: 15px;
 }
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
-.portfolio {
-  margin-top: 93px;
-  margin-bottom: 94px;
-}
-
 .filters {
   margin-bottom: 34px;  
  }
