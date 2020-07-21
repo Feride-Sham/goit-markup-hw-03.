@@ -335,15 +335,24 @@ h3 {
   flex-wrap: wrap;
 }
 
+.customer a {
+  display: block;
+  align-items: center;
+}
+
 .customer .item {
   width: calc((100% - 5 * 30px) / 6);
   margin-right: 30px;
-  justify-content: space-between;
+
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
 }
 
 .customer .item:nth-child(6n) {
   margin-right: 0px;
 }
+
 /* -----------стилизация блока Футер---------------- */
 .footer {
   color: var(--title-text-color);
@@ -358,6 +367,7 @@ h3 {
 }
 
 .footer b {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -387,6 +397,17 @@ h3 {
 .footer .networks:focus {
   color: var(--accent-color);
 }
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* .footer .item {
+  margin-left: ;
+} */
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
 .filters {
