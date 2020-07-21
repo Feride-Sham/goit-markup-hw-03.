@@ -19,29 +19,31 @@
     <!-- Шапка с навигацией-->
     <header>
       <!--навигация по сайту-->
-      <div class="container">
-        <nav class="navigation">
+      <div class="container main-nav">
+        <nav class="navigation main-nav">
           <div class="logo">
             <a href="./"> <span class="logo-web">Web</span> Studio </a>
           </div>
 
-          <ul class="list">
-            <li><a href="" class="nav-link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-            <li><a href="" class="nav-link">Контакты</a></li>
+          <ul class="list site-nav">
+            <li class="item"><a href="" class="nav-link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav-link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="nav-link">Контакты</a></li>
           </ul>
         </nav>
 
         <!--контакты для связи-->
 
-        <ul class="list">
-          <li>
+        <ul class="list nav-contacts">
+          <li class="item">
             <a href="mailto:info@devstudio.com " class="contacts">
               <img src="./image/mail.svg" alt="Конверт" />
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111 " class="contacts">
               <img src="./image/smartphone.svg" alt="Телефон" />
               +38 096 111 11 11
@@ -66,8 +68,8 @@
           <!-- заголовок скрыть в css-->
           <h2 hidden="true">Преимущества Студии</h2>
 
-          <ul class="list">
-            <li>
+          <ul class="feature-list list">
+            <li class="item">
               <img class="advantages-img" src="./image/antenna.svg" alt="" />
               <h3>Внимание к деталям</h3>
               <p>
@@ -75,7 +77,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img class="advantages-img" src="./image/clock.svg" alt="" />
               <h3>Пунктуальность</h3>
               <p>
@@ -83,7 +85,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img class="advantages-img" src="./image/diagram.svg" alt="" />
               <h3>Планирование</h3>
               <p>
@@ -91,7 +93,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <img class="advantages-img" src="./image/astronaut.svg" alt="" />
               <h3>Современные технологии</h3>
               <p>
@@ -108,16 +110,16 @@
         <div class="container">
           <h2>Чем мы занимаемся</h2>
 
-          <ul class="list">
-            <li>
+          <ul class="example-list list">
+            <li class="item">
               <img src="./image/box1.jpg" alt="Ноутбук" width="370" />
               <h3>Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./image/box2.jpg" alt="Мобильный телефон" width="370" />
               <h3>Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img src="./image/box3.jpg" alt="Монитор" width="370" />
               <h3>Дизайнерские решения</h3>
             </li>
@@ -130,9 +132,9 @@
         <div class="container">
           <h2>Наша команда</h2>
 
-          <ul class="list">
+          <ul class="staff-list list">
             <!--Сотрудник 1-->
-            <li>
+            <li class="item">
               <img
                 class="staff-img"
                 src="./image/photo1.jpg"
@@ -142,113 +144,131 @@
               <h3>Николай Кучеренко</h3>
               <p>Product Designer</p>
 
-              <ul class="list networks">
-                <li>
-                  <a href="" aria-label="Ссылка на Инстаграмм">Инстаграмм</a>
+              <ul class="networks list">
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
                 </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Твиттер">Твиттер</a>
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Твиттер">Twit</a>
                 </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Фейсбук">Фейсбук</a>
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Фейсбук">FB</a>
                 </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Линкедин">Линкедин</a>
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
                 </li>
               </ul>
             </li>
 
             <!--Сотрудник 2-->
-            <li>
-              <img src="./image/photo2.jpg" alt="Сотрудник 2" width="270" />
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo2.jpg"
+                alt="Сотрудник 2"
+                width="270"
+              />
               <h3>Ольга Иванова</h3>
               <p>Frontend Developer</p>
 
-              <ul class="list networks">
-                <li>
-                  <a href="" aria-label="Ссылка на Инстаграмм">Инстаграмм</a>
-                </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Твиттер">Твиттер</a>
-                </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Фейсбук">Фейсбук</a>
-                </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Линкедин">Линкедин</a>
-                </li>
-              </ul>
+            <ul class="networks list">
+              <li class="item">
+                <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+              </li>
+            </ul>
+            </li>
             </li>
 
             <!--Сотрудник 3-->
-            <li>
-              <img src="./image/photo3.jpg" alt="Сотрудник 3" width="270" />
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo3.jpg"
+                alt="Сотрудник 3"
+                width="270"
+              />
               <h3>Андрей Шевченко</h3>
               <p>Marketing</p>
 
-              <ul class="list networks">
-                <li>
-                  <a href="" aria-label="Ссылка на Инстаграмм">Инстаграмм</a>
+              <ul class="networks list">
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
                 </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Твиттер">Твиттер</a>
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Твиттер">Twit</a>
                 </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Фейсбук">Фейсбук</a>
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Фейсбук">FB</a>
                 </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Линкедин">Линкедин</a>
+                <li class="item">
+                  <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
                 </li>
               </ul>
+              </li>
             </li>
 
             <!--Сотрудник 4-->
-            <li>
-              <img src="./image/photo4.jpg" alt="Сотрудник 4" width="270" />
+            <li class="item">
+              <img
+                class="staff-img"
+                src="./image/photo4.jpg"
+                alt="Сотрудник 4"
+                width="270"
+              />
               <h3>Иван Николаев</h3>
               <p>UI Designer</p>
 
-              <ul class="list networks">
-                <li>
-                  <a href="" aria-label="Ссылка на Инстаграмм">Инстаграмм</a>
-                </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Твиттер">Твиттер</a>
-                </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Фейсбук">Фейсбук</a>
-                </li>
-                <li>
-                  <a href="" aria-label="Ссылка на Линкедин">Линкедин</a>
-                </li>
-              </ul>
+            <ul class="networks list">
+              <li class="item">
+                <a href="" aria-label="Ссылка на Инстаграмм">Inst</a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Твиттер">Twit</a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Фейсбук">FB</a>
+              </li>
+              <li class="item">
+                <a href="" aria-label="Ссылка на Линкедин">LinkI</a>
+              </li>
+            </ul>
+            </li>
             </li>
           </ul>
         </div>
       </section>
 
       <!--Постоянные клиенты-->
-      <section class="customer sections">
+      <section class="sections">
         <div class="container">
           <h2 class="customer-title">Постоянные клиенты</h2>
 
           <ul class="list customer">
-            <li>
+            <li class="item">
               <a href=""><img src="./image/logo1.svg" alt="Логотип" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./image/logo2.svg" alt="Логотип" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./image/logo3.svg" alt="Логотип" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./image/logo4.svg" alt="Логотип" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./image/logo5.svg" alt="Логотип" /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""><img src="./image/logo6.svg" alt="Логотип" /></a>
             </li>
           </ul>
