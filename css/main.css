@@ -115,6 +115,7 @@ h3 {
 .nav-contacts .item + .item {
   margin-left: 30px;
 }
+
 .contacts {
   color: var(--main-text-color);
   text-decoration: none;
@@ -406,10 +407,6 @@ h3 {
   justify-content: space-between;
   align-items: baseline;
 }
-
-/* .footer .item {
-  margin-left: ;
-} */
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
 
