@@ -52,9 +52,21 @@ h3 {
 }
 
 /* ----------------стилизация шапки сайта----------------- */
+/* --навигация по сайту-- */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* ---логотип--- */
 .navigation .logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--secondary-text-color);
+  text-decoration: none;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -63,37 +75,6 @@ h3 {
 }
 
 .logo-web {
-  color: var(--accent-color);
-}
-
-/* --навигация по сайту-- */
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.navigation a {
-  color: var(--secondary-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  letter-spacing: 0.02em;
-}
-
-.nav-link.current {
-  color: var(--accent-color);
-}
-
-.nav-link:hover,
-.nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -106,6 +87,28 @@ h3 {
 кроме последнего элемента */
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+}
+
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
 }
 
 .nav-contacts {
@@ -186,6 +189,20 @@ h3 {
   overflow: hidden;
 }
 
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-list .item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+}
+
+.feature-list .item:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .advantages-img {
   margin-bottom: 30px;
 }
@@ -209,20 +226,6 @@ h3 {
   line-height: 1.71;
 }
 
-.feature-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.feature-list .item {
-  width: calc((100% - 3 * 30px) / 4);
-  margin-right: 30px;
-}
-
-.feature-list .item:nth-child(4n) {
-  margin-right: 0px;
-}
-
 /* -------стилизация блока Чем мы занимаемся--------*/
 .examples {
   padding-top: 0px;
@@ -238,19 +241,6 @@ h3 {
   text-align: center;
 }
 
-.examples h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .example-list {
   display: flex;
   flex-wrap: wrap;
@@ -259,12 +249,28 @@ h3 {
 .example-item {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
-
-  background: rgba(47, 48, 58, 0.8);
 }
 
 .example-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.example-item img {
+  display: block;
+}
+
+.examples h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: var(--title-text-color);
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ---------стилизацтя блока Сотрудники------------ */
@@ -280,6 +286,21 @@ h3 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staff-list .item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  background-color: var(--title-text-color);
+}
+
+.staff-list .item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .staff-img {
@@ -306,6 +327,22 @@ h3 {
   text-align: center;
 }
 
+.networks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 24px;
+}
+
+.icon {
+  display: flex;
+}
+
+.icon:not(:last-child) {
+  margin-right: 10px;
+}
+
 .icon a {
   display: block;
   width: 44px;
@@ -319,28 +356,6 @@ h3 {
 .icon a:focus {
   color: var(--accent-color);
 }
-.networks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-bottom: 24px;
-}
-
-.staff-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.staff-list .item {
-  width: calc((100% - 3 * 30px) / 4);
-  margin-right: 30px;
-  background-color: var(--title-text-color);
-}
-
-.staff-list .item:nth-child(4n) {
-  margin-right: 0px;
-}
 
 /* ----------стилизация блока Постоянные клиенты---------- */
 .customer-title {
@@ -353,19 +368,9 @@ h3 {
   text-align: center;
 }
 
-.customer a:hover,
-.customer a:focus {
-  color: var(--accent-color);
-}
-
 .customer {
   display: flex;
   flex-wrap: wrap;
-}
-
-.customer a {
-  display: flex;
-  align-items: center;
 }
 
 .customer .item {
@@ -387,15 +392,35 @@ h3 {
   margin-right: 0px;
 }
 
+.customer a {
+  display: flex;
+  align-items: center;
+}
+
+.customer a:hover,
+.customer a:focus {
+  color: var(--accent-color);
+}
+
 /* -----------стилизация блока Футер---------------- */
 .footer {
-  padding-top: 48px;
+  padding-bottom: 61px;
   color: var(--title-text-color);
   background-color: #2f303a;
   font-style: normal;
 }
 
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .footer .logo {
+  padding-bottom: 0px;
+
   color: var(--title-text-color);
   letter-spacing: 0.03em;
   font-size: 26px;
@@ -418,6 +443,7 @@ h3 {
 }
 
 .footer .footer-contacts {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -434,11 +460,12 @@ h3 {
   color: var(--accent-color);
 }
 
-.footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
+.footer-box {
+  display: block;
+}
+
+.sign-form {
+  width: 570px;
 }
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
@@ -501,6 +528,7 @@ h3 {
 }
 
 .gallery .text {
+  display: none;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -515,13 +543,24 @@ h3 {
   display: flex;
   flex-wrap: wrap;
 }
-.gallery .item {
+
+.gallery-item {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.gallery .item:nth-child(3n) {
+.card-title {
+  border: 1px solid #eeeeee;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.gallery-item img {
+  display: block;
+}
+
+.gallery-item:nth-child(3n) {
   margin-right: 0px;
 }
 
