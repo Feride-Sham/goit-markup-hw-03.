@@ -296,6 +296,7 @@ h3 {
 .staff-list .item {
   width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
+  padding-bottom: 24px;
   background-color: var(--title-text-color);
 }
 
@@ -331,8 +332,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  margin-bottom: 24px;
 }
 
 .icon {
@@ -415,7 +414,12 @@ h3 {
   flex-wrap: wrap;
 
   align-items: baseline;
-  justify-content: space-between;
+}
+
+.footer-box {
+  display: block;
+  width: 270px;
+  margin-right: 30px;
 }
 
 .footer .logo {
@@ -450,6 +454,10 @@ h3 {
   line-height: 1.71;
 }
 
+.footer .networks {
+  justify-content: start;
+}
+
 .footer .icon a {
   color: var(--title-text-color);
   text-decoration: none;
@@ -462,10 +470,13 @@ h3 {
 
 .footer-box {
   display: block;
+  width: 270px;
+  margin-right: 30px;
 }
 
 .sign-form {
   width: 570px;
+  margin-right: 0px;
 }
 
 /* -----------------------стилизация страницы Портфолио------------------------------ */
@@ -508,7 +519,7 @@ h3 {
 }
 
 .gallery h2 {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -552,8 +563,7 @@ h3 {
 
 .card-title {
   border: 1px solid #eeeeee;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 20px 24px;
 }
 
 .gallery-item img {
