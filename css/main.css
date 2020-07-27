@@ -403,6 +403,7 @@ h3 {
 
 /* -----------стилизация блока Футер---------------- */
 .footer {
+  padding-top: 60px;
   padding-bottom: 61px;
   color: var(--title-text-color);
   background-color: #2f303a;
@@ -424,6 +425,7 @@ h3 {
 
 .footer .logo {
   padding-bottom: 0px;
+  padding-top: 0px;
 
   color: var(--title-text-color);
   letter-spacing: 0.03em;
@@ -483,7 +485,7 @@ h3 {
 
 .list-button {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
